@@ -1,0 +1,17 @@
+.t-b{
+    color: #181818 !important;
+    text-transform: uppercase;
+}
+
+.nav-active{
+    background-color: #fd2323;
+    border-radius: 2px;
+    color: white;
+}
+
+.bg-nav{
+    background-color: #f6f6f6;
+    -webkit-box-shadow: inset -1px -35px 48px -56px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px -35px 48px -56px rgba(0,0,0,0.75);
+    box-shadow: inset -1px -35px 48px -56px rgba(0,0,0,0.75);
+}

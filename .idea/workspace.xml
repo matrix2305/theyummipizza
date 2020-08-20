@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d99e9360-9fff-4acf-9fac-a649f82cc039" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Yummi.Libary/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/composer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laravel-doctrine/extensions" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laravel-doctrine/migrations" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laravel-doctrine/orm" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/http" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/pagination" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/session" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/pipeline" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/queue" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/console" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/auth" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/validation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/routing" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/config" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/var-dumper" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1gJcbwOtnqQy9CTIKTdocM5W0kN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders" />
+      <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase" />
+      <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Enum" />
+      <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Buy" />
+      <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizza" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Entities" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ARTISAN" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Yummi.MvcApp/artisan" scriptParameters="serve --host=127.0.0.1 --port=8000">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Yummi.MvcApp/artisan" scriptParameters="serve --host=127.0.0.1 --port=8000">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d99e9360-9fff-4acf-9fac-a649f82cc039" name="Default Changelist" comment="" />
+      <created>1597836211250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597836211250</updated>
+      <workItem from="1597836212500" duration="12728000" />
+      <workItem from="1597850694363" duration="9000" />
+      <workItem from="1597851714056" duration="32936000" />
+      <workItem from="1597920014595" duration="4673000" />
+      <workItem from="1597926403208" duration="11686000" />
+      <workItem from="1597944310947" duration="14519000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1863" y="331" width="442" height="236" key="#Composer" timestamp="1597838187429">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1863" y="331" width="442" height="236" key="#Composer/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597838187429" />
+    <state x="43" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597944130998">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="43" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944130998" />
+    <state x="1923" y="235" width="317" height="427" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597926527829">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1923" y="235" width="317" height="427" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597926527829" />
+    <state x="1819" y="201" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597932130677">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1819" y="201" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597932130677" />
+    <state x="1819" y="209" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597884339644">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="430" y="193" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597870362397" />
+    <state x="1819" y="209" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597884339644" />
+    <state x="437" y="232" width="488" height="307" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1597942587383">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="437" y="232" width="488" height="307" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597942587383" />
+    <state x="1833" y="364" width="502" height="170" key="ComposerInitDialogKey" timestamp="1597836672615">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1833" y="364" width="502" height="170" key="ComposerInitDialogKey/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597836672615" />
+    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl" timestamp="1597944090130">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944090130" />
+    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597930148793" />
+    <state width="1324" height="153" key="GridCell.Tab.0.bottom" timestamp="1597945065625">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state width="1324" height="153" key="GridCell.Tab.0.bottom/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597945065625" />
+    <state width="1324" height="153" key="GridCell.Tab.0.center" timestamp="1597945065625">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state width="1324" height="153" key="GridCell.Tab.0.center/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597945065625" />
+    <state width="1324" height="153" key="GridCell.Tab.0.left" timestamp="1597945065625">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state width="1324" height="153" key="GridCell.Tab.0.left/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597945065625" />
+    <state width="1324" height="153" key="GridCell.Tab.0.right" timestamp="1597945065625">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state width="1324" height="153" key="GridCell.Tab.0.right/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597945065625" />
+    <state x="328" y="155" width="986" height="571" key="NewPhpClassDialog" timestamp="1597942073161">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="328" y="155" width="986" height="515" key="NewPhpClassDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597942073161" />
+    <state x="1741" y="164" width="986" height="571" key="NewPhpClassDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597934381016" />
+    <state x="1463" y="99" width="1246" height="704" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1597875115583">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1463" y="99" width="1246" height="704" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597875115583" />
+    <state x="187" y="89" width="1022" height="550" maximized="true" key="dock-window-1" timestamp="1597944113021">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="187" y="89" width="1022" height="550" maximized="true" key="dock-window-1/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944113021" />
+    <state x="114" y="26" width="1147" height="717" maximized="true" key="dock-window-1/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597934560371" />
+    <state x="363" y="181" width="672" height="543" key="search.everywhere.popup" timestamp="1597946903323">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="363" y="181" width="672" height="543" key="search.everywhere.popup/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597946903323" />
+    <state x="1749" y="194" width="672" height="678" key="search.everywhere.popup/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597922211498" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+
+
+.text-s-tab{
+    padding-top: 5vh;
+    color: #fb2323;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.text-s-tab a{
+    font-size: 50px;
+    color: #fb2323;
+}

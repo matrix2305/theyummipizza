@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/composer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laravel-doctrine/extensions" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laravel-doctrine/migrations" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/laravel-doctrine/orm" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/http" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/pagination" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/session" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/pipeline" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/queue" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/console" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/auth" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/validation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/routing" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/config" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/var-dumper" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/Yummi.Libary/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>

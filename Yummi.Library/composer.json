@@ -1,0 +1,42 @@
+{
+  "name": "theyummipizza/yummi.library",
+  "description": "Domain for The Yummi Pizza project",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Srdjan Radosavljevic",
+      "email": "srki.rado@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Yummi\\Application\\" : "Application/",
+      "Yummi\\Domain\\" : "Domain/",
+      "Yummi\\Infrastructure\\" : "Infrastructure/"
+    }
+  },
+  "require": {
+    "php" : "^7.4"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "extra" : {
+    "laravel" : {
+      "providers" : [
+        "Yummi\\Infrastructure\\YummiServiceProvider"
+      ]
+    },
+    "branch-alias": {
+      "dev-master": "@dev"
+    }
+  },
+
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
