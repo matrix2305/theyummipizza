@@ -4,13 +4,14 @@ namespace Yummi\Application\UseCases\Pizzas\AddOrUpdatePizzaUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IPizzasRepository;
+use Yummi\Application\Contracts\UseCases\IAddOrUpdatePizzaUseCase;
 use Yummi\Application\UseCases\Pizzas\GetPizzasUseCase\GetPizzasOutput;
 use Yummi\Domain\Entities\Pizza;
 use RuntimeException;
 use Yummi\Domain\Entities\Price;
 use Yummi\Domain\Enum\Size;
 
-class AddOrUpdatePizzaUseCase
+class AddOrUpdatePizzaUseCase implements IAddOrUpdatePizzaUseCase
 {
     private IPizzasRepository $pizzasRepository;
 

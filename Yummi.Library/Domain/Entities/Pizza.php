@@ -62,8 +62,15 @@ class Pizza implements IEntity
      */
     private ArrayCollection $price;
 
+    /**
+     * @var ArrayCollection
+     * @ORM\OneToMany (targetEntity="OrderSideDishPizza", mappedBy="Pizza", fetch="EXTRA_LAZY")
+     */
+    private ArrayCollection $orderSideDishPizza;
+
     public function __construct(){
         $this->price = new ArrayCollection();
+        $this->orderSideDishPizza = new ArrayCollection();
     }
 
     /**

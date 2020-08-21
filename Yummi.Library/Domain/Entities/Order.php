@@ -80,7 +80,7 @@ class Order implements IEntity
 
     /**
      * @var ArrayCollection
-     * @ORM\ManyToMany(targetEntity="Pizza", mappedBy="Order", fetch="EAGER")
+     * @ORM\ManyToMany(targetEntity="Price", mappedBy="Order", fetch="EAGER")
      */
     private ArrayCollection $pizzas;
 
@@ -98,21 +98,18 @@ class Order implements IEntity
 
     /**
      * @var ArrayCollection
-     * @ORM\ManyToMany (targetEntity="SideDish", mappedBy="Order", fetch="EAGER")
+     * @ORM\OneToMany (targetEntity="OrderSideDishPizza", mappedBy="Order", fetch="EAGER")
      */
-    private ArrayCollection $sideDishes;
-
-    private array $pricePizza;
+    private ArrayCollection $orderSideDishPizza;
 
 
     public function __construct()
     {
         $this->price = null;
-        $this->pricePizza = [];
         $this->pizzas = new ArrayCollection();
         $this->salads = new ArrayCollection();
         $this->drinks = new ArrayCollection();
-        $this->sideDishes = new ArrayCollection();
+        $this->orderSideDishPizza = new ArrayCollection();
     }
 
     public function getId(): string
@@ -120,42 +117,27 @@ class Order implements IEntity
         return $this->id;
     }
 
-    public function getPizzas(): ArrayCollection
-    {
-        return $this->pizzas;
-    }
-
-    public function setPizzas(Pizza $pizza): void
-    {
-        $this->pizzas->add($pizza);
-    }
-
-    public function setPricePizza(int $price) : void
-    {
-        $this->pricePizza[] = $price;
-    }
-
     public function setPrice(): void
     {
         $total = 0;
-        if (count($this->pricePizza)>0){
-            foreach ($this->pricePizza as $price){
-                $total += $price;
+        if (count($this->pizzas->toArray())>0){
+            foreach ($this->pizzas->toArray() as $pizza){
+                $total += $pizza->getPrice();
             }
         }
         if (count($this->salads->toArray()) > 0) {
             foreach ($this->salads->toArray() as $salad) {
-                $price += $salad->getPrice();
+                $total += $salad->getPrice();
             }
         }
 
         if (count($this->drinks->toArray()) > 0) {
             foreach ($this->drinks->toArray() as $drink) {
-                $price += $drink->getPrice();
+                $total += $drink->getPrice();
             }
         }
 
-        if ($price === 0) {
+        if ($total === 0) {
             throw new RuntimeException("You aren't selected no one product, please select product.");
         }
 
@@ -262,6 +244,16 @@ class Order implements IEntity
     public function setSideDishes(SideDish $sideDish) : void
     {
         $this->sideDishes->add($sideDish);
+    }
+
+    public function setPricePizzas(Price $price) : void
+    {
+        $this->pizzas->add($price);
+    }
+
+    public function getPricePizzas() : ArrayCollection
+    {
+        return $this->pizzas;
     }
 
     public function clear() : void

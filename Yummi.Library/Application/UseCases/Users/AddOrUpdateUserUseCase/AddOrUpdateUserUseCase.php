@@ -5,6 +5,7 @@ namespace Yummi\Application\UseCases\Users\AddOrUpdateUserUseCase;
 
 use Illuminate\Support\Facades\Hash;
 use Yummi\Application\Contracts\Repositories\IUsersRepository;
+use Yummi\Application\Contracts\UseCases\IAddOrUpdateUserUseCase;
 use Yummi\Application\UseCases\Users\GetUsersUseCase\GetUsersOutput;
 use Yummi\Domain\Entities\Person;
 use Yummi\Domain\Entities\User;
@@ -12,7 +13,7 @@ use Yummi\Domain\ValueObjects\Address;
 use Yummi\Domain\ValueObjects\Phone;
 use Yummi\Infrastructure\Services\ImageUploader\ImageUpload;
 
-class AddOrUpdateUserUseCase
+class AddOrUpdateUserUseCase implements IAddOrUpdateUserUseCase
 {
     private IUsersRepository $usersRepository;
 

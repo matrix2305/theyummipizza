@@ -2,12 +2,12 @@
 declare(strict_types=1);
 namespace Yummi\Application\UseCases\Salads\AddOrUpdateSaladUseCase;
 
-
 use Yummi\Application\Contracts\Repositories\ISaladsRepository;
+use Yummi\Application\Contracts\UseCases\IAddOrUpdateSaladUseCase;
 use Yummi\Application\UseCases\Salads\GetSaladsUseCase\GetSaladsOutput;
 use Yummi\Domain\Entities\Salad;
 
-class AddOrUpdateSaladUseCase
+class AddOrUpdateSaladUseCase implements IAddOrUpdateSaladUseCase
 {
     private ISaladsRepository $saladRepository;
 

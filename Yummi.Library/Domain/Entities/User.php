@@ -53,7 +53,7 @@ class User implements Authenticatable, CanResetPasswordContract, JWTSubject, IEn
 
     /**
      * @var Person
-     * @ORM\OneToOne(targetEntity="Person", inversedBy="User", fetch="EAGER")
+     * @ORM\OneToOne(targetEntity="Person", mappedBy="User", fetch="EAGER")
      */
     private Person $person;
 

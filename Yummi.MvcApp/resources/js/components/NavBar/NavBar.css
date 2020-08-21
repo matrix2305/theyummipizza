@@ -1,12 +1,17 @@
 .t-b{
     color: #181818 !important;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 .nav-active{
-    background-color: #fd2323;
+    background-color: #d61717;
     border-radius: 2px;
     color: white;
+}
+
+.nav-active:hover{
+    color: white !important;
 }
 
 .bg-nav{

@@ -4,8 +4,9 @@ namespace Yummi\Application\UseCases\Orders\GetOrdersUseCase;
 
 use RuntimeException;
 use Yummi\Application\Contracts\Repositories\IOrderRepository;
+use Yummi\Application\Contracts\UseCases\IGetOrdersUseCase;
 
-class GetOrdersUseCase
+class GetOrdersUseCase implements IGetOrdersUseCase
 {
     private IOrderRepository $ordersRepository;
 

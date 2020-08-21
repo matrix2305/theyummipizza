@@ -6,8 +6,9 @@ namespace Yummi\Application\UseCases\Orders\DeleteSideDishesUseCase;
 use Yummi\Application\Contracts\Repositories\IOrderRepository;
 use RuntimeException;
 use Exception;
+use Yummi\Application\Contracts\UseCases\IDeleteSideDishesUseCase;
 
-class DeleteSideDishesUseCase
+class DeleteSideDishesUseCase implements IDeleteSideDishesUseCase
 {
     private IOrderRepository $orderRepository;
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@300;400;500;600;700&display=swap');
+
 a {
     color: #fb2323 !important;
 }
@@ -8,4 +10,23 @@ a:hover {
 
 a:active {
     color: #fb2323 !important;
+}
+
+body{
+    font-family: 'Rasa', serif !important;
+    font-size: 19px !important;
+}
+
+.full-height{
+    height: 89vh;
+}
+
+.btn-red{
+    color: #fff !important;
+    background-color: #d61717 !important;
+    border-color: #cd1515 !important;
+}
+
+.btn-red:hover{
+    background-color: #b01010 !important;
 }

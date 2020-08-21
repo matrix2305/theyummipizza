@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Tymon\JWTAuth\Facades\JWTAuth;
 use Yummi\Application\Contracts\UseCases\IAddOrUpdateUserUseCase;
 use Yummi\Application\Contracts\UseCases\IGetUsersUseCase;
 use Yummi\Application\UseCases\Users\GetUsersUseCase\GetUsersOutput;
@@ -22,19 +23,20 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        try {
-            $user = $this->GetUsersUseCase->Execute($request->input('username'));
-            $field_type = filter_var($request->input('username'), FILTER_VALIDATE_EMAIL)? 'email' : 'username';
-            $request->merge([$field_type => $request->input('username')]);
-            $credentials = array_merge($request->only([$field_type, 'password']));
-            $remember = $request->has('remember');
-            if ($token = Auth::attempt($credentials, $remember)){
-                return response()->json(['token' => $token, 'user' => $user, 'message' => 'Successfully login!', 'status' => true]);
-            }
-            return response()->json(['Unsuccessfully login, wrong password!', 'status' => false]);
-        }catch (Exception $exception){
-            return response()->json(['Unsuccessfully login, wrong username or email!', 'status' => false]);
-        }
+        var_dump($request->all());
+//        try {
+//            $user = $this->GetUsersUseCase->Execute($request->input('username'));
+//            $field_type = filter_var($request->input('username'), FILTER_VALIDATE_EMAIL)? 'email' : 'username';
+//            $request->merge([$field_type => $request->input('username')]);
+//            $credentials = array_merge($request->only([$field_type, 'password']));
+//            $remember = $request->has('remember');
+//            if ($token = auth()->attempt($credentials, $remember)){
+//                return response()->json(['token' => $token, 'user' => $user, 'message' => 'Successfully sing in!', 'status' => true]);
+//            }
+//            return response()->json(['Unsuccessfully login, wrong password!', 'status' => false]);
+//        }catch (Exception $exception){
+//            return response()->json(['Unsuccessfully login, wrong username or email!', 'status' => false]);
+//        }
     }
 
     public function me()

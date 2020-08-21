@@ -3,6 +3,7 @@ declare(strict_types=1);
 namespace Yummi\Domain\Entities;
 
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Yummi\Domain\IAggregate;
 use Yummi\Domain\Enum\Size;
@@ -25,7 +26,7 @@ class Price implements IAggregate
 
     /**
      * @var Pizza
-     * @ORM\ManyToOne (targetEntity="Pizza", inversedBy="Pizza", fetch="LAZY")
+     * @ORM\ManyToOne (targetEntity="Pizza", inversedBy="Pizza", fetch="EAGER")
      */
     private Pizza $pizza;
 
@@ -36,10 +37,22 @@ class Price implements IAggregate
     private int $price;
 
     /**
+     * @var ArrayCollection
+     * @ORM\ManyToMany (targetEntity="Order", inversedBy="Price", fetch="LAZY")
+     */
+    private ArrayCollection $orders;
+
+    /**
      * @var Size
      * @ORM\Embedded (class="Yummi\Domain\Enum\Size")
      */
     private Size $size;
+
+
+    public function __construct()
+    {
+        $this->orders = new ArrayCollection();
+    }
 
     public function getId() : string
     {
@@ -74,5 +87,15 @@ class Price implements IAggregate
     public function getPizza() : Pizza
     {
         return $this->pizza;
+    }
+
+    public function setOrders(Order $order) : void
+    {
+        $this->orders->add($order);
+    }
+
+    public function getOrders() : ArrayCollection
+    {
+        return $this->orders;
     }
 }

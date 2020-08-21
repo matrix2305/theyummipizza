@@ -5,8 +5,9 @@ namespace Yummi\Application\UseCases\Users\DeleteUserUseCase;
 
 use RuntimeException;
 use Yummi\Application\Contracts\Repositories\IUsersRepository;
+use Yummi\Application\Contracts\UseCases\IDeleteUserUseCase;
 
-class DeleteUserUseCase
+class DeleteUserUseCase implements IDeleteUserUseCase
 {
     private IUsersRepository $usersRepository;
 

@@ -5,7 +5,9 @@ namespace Yummi\Application\UseCases\Drinks\DeleteDrinkUseCase;
 use Exception;
 use Yummi\Application\Contracts\Repositories\IDrinksRepository;
 use RuntimeException;
-class DeleteDrinkUseCase
+use Yummi\Application\Contracts\UseCases\IDeleteDrinkUseCase;
+
+class DeleteDrinkUseCase implements IDeleteDrinkUseCase
 {
     private IDrinksRepository $drinksRepository;
 

@@ -4,10 +4,11 @@ namespace Yummi\Application\UseCases\Drinks\AddOrUpdateDrinkUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IDrinksRepository;
+use Yummi\Application\Contracts\UseCases\IAddOrUpdateDrinkUseCase;
 use Yummi\Application\UseCases\Drinks\GetDrinksUseCase\GetDrinksOutput;
 use Yummi\Domain\Entities\Drink;
 
-class AddOrUpdateDrinkUseCase
+class AddOrUpdateDrinkUseCase implements IAddOrUpdateDrinkUseCase
 {
     private IDrinksRepository $drinksRepository;
 

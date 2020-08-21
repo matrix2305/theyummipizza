@@ -6,8 +6,9 @@ namespace Yummi\Application\UseCases\Salads\DeleteSaladUseCase;
 use Exception;
 use RuntimeException;
 use Yummi\Application\Contracts\Repositories\ISaladsRepository;
+use Yummi\Application\Contracts\UseCases\IDeleteSaladUseCase;
 
-class DeleteSaladUseCase
+class DeleteSaladUseCase implements IDeleteSaladUseCase
 {
     private ISaladsRepository $saladsRepository;
 

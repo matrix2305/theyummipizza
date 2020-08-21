@@ -4,8 +4,9 @@ namespace Yummi\Application\UseCases\Salads\GetSaladsUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\ISaladsRepository;
+use Yummi\Application\Contracts\UseCases\IGetSaladsUseCase;
 
-class GetSaladsUseCase
+class GetSaladsUseCase implements IGetSaladsUseCase
 {
     private ISaladsRepository $saladsRepository;
 

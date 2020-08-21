@@ -4,8 +4,9 @@ namespace Yummi\Application\UseCases\Content\GetContentUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IContentRepository;
+use Yummi\Application\Contracts\UseCases\IGetContentUseCase;
 
-class GetContentUseCase
+class GetContentUseCase implements IGetContentUseCase
 {
     private IContentRepository $contentRepository;
 

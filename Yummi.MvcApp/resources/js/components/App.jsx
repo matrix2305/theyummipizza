@@ -7,19 +7,26 @@ import {BrowserRouter, Route} from "react-router-dom";
 import NavBar from "./NavBar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Musthead from "./Masthead/Masthead";
-import SelectTab from "./SelectTab/SelectTab";
 import Footer from "./Footer/Footer";
+import Login from "./Login/Login";
 
 
 
 function App() {
     return(
         <BrowserRouter>
-            <Route to='/' exact>
+            <Route path='/' exact>
                 <NavBar/>
                 <Musthead/>
-                <SelectTab/>
-                <Footer/>
+                <div className='container-fluid'>
+                    <div className='row mt-5'>
+                        <Footer/>
+                    </div>
+                </div>
+            </Route>
+            <Route path='/login' exact>
+                <NavBar/>
+                <Login/>
             </Route>
         </BrowserRouter>
     )

@@ -8,13 +8,14 @@ use Yummi\Application\Contracts\Repositories\IDrinksRepository;
 use Yummi\Application\Contracts\Repositories\IOrderRepository;
 use Yummi\Application\Contracts\Repositories\IPizzasRepository;
 use Yummi\Application\Contracts\Repositories\ISaladsRepository;
+use Yummi\Application\Contracts\UseCases\IAddOrUpdateOrdersUseCase;
 use Yummi\Application\UseCases\Orders\GetOrdersUseCase\GetOrdersOutput;
 use Yummi\Domain\Entities\Order;
 use Yummi\Domain\ValueObjects\Address;
 use Yummi\Domain\ValueObjects\Email;
 use Yummi\Domain\ValueObjects\Phone;
 
-class AddOrUpdateOrdersUseCase
+class AddOrUpdateOrdersUseCase implements IAddOrUpdateOrdersUseCase
 {
     private IOrderRepository $orderRepository;
     private IPizzasRepository $pizzaRepository;
@@ -31,6 +32,10 @@ class AddOrUpdateOrdersUseCase
     public function Execute() : void
     {
         $data = GetOrdersOutput::fromRequest();
+        if (empty($data->pizzas) && empty($data->salads) && empty($data->drinks)) {
+            throw new RuntimeException("You aren't no one product, please select product!");
+        }
+
         if (!empty($data->id)){
             $order = $this->orderRepository->getOneOrder($data->id);
             $version = $data->updatedAt;
@@ -38,17 +43,11 @@ class AddOrUpdateOrdersUseCase
             $order = new Order();
             $version = null;
         }
-        if (!empty($data->pizzaPriceId)){
-            foreach ($data->pizzaPriceId as $id){
-                $price = $this->pizzaRepository->getOnePrice($id)->getPrice();
-                $order->setPricePizza($price);
+        if (!empty($data->pizzas)){
+            foreach ($data->pizzas as $id){
+                $price = $this->pizzaRepository->getOnePrice($id);
+                $order->setPricePizzas($price);
             }
-        }else{
-            throw new RuntimeException("You aren't selected no one product, please select product.");
-        }
-        foreach ($data->pizzas as $id){
-            $pizza = $this->pizzaRepository->getOnePizza($id);
-            $order->setPizzas($pizza);
         }
         if (!empty($data->salads)){
             foreach ($data->salads as $id){

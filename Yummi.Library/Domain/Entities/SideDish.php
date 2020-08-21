@@ -1,6 +1,5 @@
 <?php
-
-
+declare(strict_types=1);
 namespace Yummi\Domain\Entities;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -41,12 +40,19 @@ class SideDish implements IAggregate
 
     /**
      * @var ArrayCollection
-     * @ORM\ManyToMany (targetEntity="Order", inversedBy="SideDish", fetch="LAZY")
+     * @ORM\ManyToMany (targetEntity="Price", inversedBy="SideDish", fetch="LAZY")
      */
-    private ArrayCollection $orders;
+    private ArrayCollection $pizzas;
+
+    /**
+     * @var ArrayCollection
+     * @ORM\OneToMany (targetEntity="OrderSideDishPizza", mappedBy="SideDish", fetch="EXTRA_LAZY")
+     */
+    private ArrayCollection $orderSideDishPizza;
 
     public function __construct(){
-        $this->orders = new ArrayCollection();
+        $this->pizzas = new ArrayCollection();
+        $this->orderSideDishPizza = new ArrayCollection();
     }
 
     public function getId() : string
@@ -78,17 +84,17 @@ class SideDish implements IAggregate
     /**
      * @return ArrayCollection
      */
-    public function getOrders(): ArrayCollection
+    public function getPizzas(): ArrayCollection
     {
-        return $this->orders;
+        return $this->pizzas;
     }
 
     /**
-     * @param Order $order
+     * @param Price $price
      */
-    public function setOrders(Order $order): void
+    public function setPizzaPrice(Price $price): void
     {
-        $this->orders->add($order);
+        $this->pizzas->add($price);
     }
 
 }

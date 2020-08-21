@@ -6,8 +6,9 @@ namespace Yummi\Application\UseCases\Pizzas\DeletePizzaUseCase;
 use Yummi\Application\Contracts\Repositories\IPizzasRepository;
 use RuntimeException;
 use Exception;
+use Yummi\Application\Contracts\UseCases\IDeletePizzaUseCase;
 
-class DeletePizzaUseCase
+class DeletePizzaUseCase implements IDeletePizzaUseCase
 {
     private IPizzasRepository $pizzasRepository;
 

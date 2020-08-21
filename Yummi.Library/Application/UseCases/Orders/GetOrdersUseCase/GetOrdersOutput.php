@@ -4,6 +4,10 @@ namespace Yummi\Application\UseCases\Orders\GetOrdersUseCase;
 
 
 use Yummi\Application\UseCases\BaseDataTransferObject;
+use Yummi\Application\UseCases\Drinks\GetDrinksUseCase\GetDrinksOutput;
+use Yummi\Application\UseCases\Orders\GetSideDishesUseCase\GetSideDishesOutput;
+use Yummi\Application\UseCases\Pizzas\GetPizzasUseCase\GetPricesOutput;
+use Yummi\Application\UseCases\Salads\GetSaladsUseCase\GetSaladsOutput;
 use Yummi\Domain\Entities\Order;
 class GetOrdersOutput extends BaseDataTransferObject
 {
@@ -22,7 +26,6 @@ class GetOrdersOutput extends BaseDataTransferObject
     public ?array $pizzas;
     public ?array $drinks;
     public ?array $sideDishes;
-    public array $pizzaPriceId = [];
 
     public static function fromEntity(Order $order) : self
     {
@@ -39,10 +42,10 @@ class GetOrdersOutput extends BaseDataTransferObject
             'town' => $order->getAddress()->getTown(),
             'createdAt' => $order->getCreatedAt()->format(self::$formatTime),
             'updatedAt' => $order->getUpdatedAt()->format(self::$formatTime),
-            'salads' => $order->getSalads()->toArray(),
-            'pizzas' => $order->getPizzas()->toArray(),
-            'drinks' => $order->getDrinks()->toArray(),
-            'sideDishes' => $order->getSideDishes()->toArray()
+            'salads' => GetSaladsOutput::fromCollection($order->getSalads()->toArray()),
+            'pizzas' => GetPricesOutput::fromCollection($order->getPricePizzas()->toArray(), true),
+            'drinks' => GetDrinksOutput::fromCollection($order->getDrinks()->toArray()),
+            'sideDishes' => GetSideDishesOutput::fromCollection($order->getSideDishes()->toArray())
         ]);
     }
 

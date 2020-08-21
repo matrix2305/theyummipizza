@@ -4,8 +4,9 @@ namespace Yummi\Application\UseCases\Drinks\GetDrinksUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IDrinksRepository;
+use Yummi\Application\Contracts\UseCases\IGetDrinksUseCase;
 
-class GetDrinksUseCase
+class GetDrinksUseCase implements IGetDrinksUseCase
 {
     private IDrinksRepository $drinksRepository;
 
@@ -13,9 +14,9 @@ class GetDrinksUseCase
         $this->drinksRepository = $drinksRepository;
     }
 
-    public function Execute($id = null)
+    public function Execute()
     {
-        if ($id){
+        if ($id = request()->input('id')){
             $drink = $this->drinksRepository->getOneDrink($id);
             return GetDrinksOutput::fromEntity($drink);
         }

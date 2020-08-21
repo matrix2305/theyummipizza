@@ -4,12 +4,13 @@ namespace Yummi\Application\UseCases\Content\UpdateContentUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IContentRepository;
+use Yummi\Application\Contracts\UseCases\IUpdateContentUseCase;
 use Yummi\Application\UseCases\Content\GetContentUseCase\GetContentOutput;
 use Yummi\Domain\ValueObjects\Address;
 use Yummi\Domain\ValueObjects\Email;
 use Yummi\Domain\ValueObjects\Phone;
 
-class UpdateContentUseCase
+class UpdateContentUseCase implements IUpdateContentUseCase
 {
     private IContentRepository $contentRepository;
 

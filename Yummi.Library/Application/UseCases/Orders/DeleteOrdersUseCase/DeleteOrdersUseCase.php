@@ -5,8 +5,9 @@ namespace Yummi\Application\UseCases\Orders\DeleteOrdersUseCase;
 
 use RuntimeException;
 use Yummi\Application\Contracts\Repositories\IOrderRepository;
+use Yummi\Application\Contracts\UseCases\IDeleteOrdersUseCase;
 
-class DeleteOrdersUseCase
+class DeleteOrdersUseCase implements IDeleteOrdersUseCase
 {
     private IOrderRepository $orderRepository;
 

@@ -6679,7 +6679,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Yummi.Library",
-                "reference": "222e6fe286aff9252ab21d2d3a23665e03749097"
+                "reference": "866e72938515c5d09b014e8864b7bb84e55e2845"
             },
             "require": {
                 "php": "^7.4"
@@ -6689,6 +6689,11 @@
             },
             "type": "library",
             "extra": {
+                "laravel": {
+                    "providers": [
+                        "Yummi\\Infrastructure\\YummiServiceProvider"
+                    ]
+                },
                 "branch-alias": {
                     "dev-master": "@dev"
                 }
@@ -6701,7 +6706,7 @@
                 }
             },
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {

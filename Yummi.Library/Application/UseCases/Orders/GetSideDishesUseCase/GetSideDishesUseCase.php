@@ -4,9 +4,10 @@ namespace Yummi\Application\UseCases\Orders\GetSideDishesUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IOrderRepository;
+use Yummi\Application\Contracts\UseCases\IGetSideDishesUseCase;
 use Yummi\Domain\Entities\SideDish;
 
-class GetSideDishesUseCase
+class GetSideDishesUseCase implements IGetSideDishesUseCase
 {
     private IOrderRepository $orderRepository;
 

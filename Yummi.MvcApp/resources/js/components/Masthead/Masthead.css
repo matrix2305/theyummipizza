@@ -1,21 +1,7 @@
-.scale-height{
-    height: 91vh !important;
-}
-
-.image-details{
-    background-color: rgba(234, 234, 234, 0.8);
-    color: black;
-    width: 400px;
-    position: absolute;
-    top: -400px;
-    text-align: left;
-    padding: 15px;
-}
-
 .masthead{
     background-color: #d61717;
     background-image: url("../../../images/musthead.jpg");
-    height: 60vh;
+    height: 89vh;
     width: 100%;
     background-attachment: fixed;
     background-position: bottom;
@@ -27,15 +13,32 @@
 }
 
 .front-text{
-    position: absolute;
-    bottom: 15vh;
-    right: 50vh;
-    width: 380px;
-    color: white;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     padding: 5px;
     border-radius: 3px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 35px;
+}
+
+.mt-200{
+    margin-top: 200px;
+}
+
+.mt-100{
+    margin-top: 200px;
+}
+
+.text-select-tab{
+    color: #d61717;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    -webkit-box-shadow: inset 0px 35px 48px -56px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 35px 48px -56px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 35px 48px -56px rgba(0,0,0,0.75);
+}
+.text-select-tab a{
+    font-size: 45px;
 }

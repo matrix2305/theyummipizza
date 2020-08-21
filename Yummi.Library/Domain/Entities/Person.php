@@ -2,7 +2,6 @@
 declare(strict_types=1);
 namespace Yummi\Domain\Entities;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Yummi\Domain\IAggregate;
 use Yummi\Domain\ValueObjects\Address;
@@ -51,7 +50,7 @@ class Person implements IAggregate
 
     /**
      * @var User
-     * @ORM\OneToOne (targetEntity="User", mappedBy="Person", fetch="LAZY", cascade={"remove"})
+     * @ORM\OneToOne (targetEntity="User", inversedBy="Person", fetch="LAZY", cascade={"remove"})
      */
     private User $user;
 

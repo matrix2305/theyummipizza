@@ -4,8 +4,9 @@ namespace Yummi\Application\UseCases\Pizzas\GetPizzasUseCase;
 
 
 use Yummi\Application\Contracts\Repositories\IPizzasRepository;
+use Yummi\Application\Contracts\UseCases\IGetPizzasUseCase;
 
-class GetPizzasUseCase
+class GetPizzasUseCase implements IGetPizzasUseCase
 {
     private IPizzasRepository $pizzasRepository;
 
@@ -13,7 +14,8 @@ class GetPizzasUseCase
         $this->pizzasRepository = $pizzasRepository;
     }
 
-    public function Execute() {
+    public function Execute()
+    {
         if ($id = request()->input('id')){
             $pizza = $this->pizzasRepository->getOnePizza($id);
             return GetPizzasOutput::fromEntity($pizza);
