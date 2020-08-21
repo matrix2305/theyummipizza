@@ -38,7 +38,7 @@ class Price implements IAggregate
 
     /**
      * @var ArrayCollection
-     * @ORM\ManyToMany (targetEntity="Order", inversedBy="Price", fetch="LAZY")
+     * @ORM\ManyToMany (targetEntity="Order", inversedBy="Price", fetch="EXTRA_LAZY")
      */
     private ArrayCollection $orders;
 
@@ -87,15 +87,5 @@ class Price implements IAggregate
     public function getPizza() : Pizza
     {
         return $this->pizza;
-    }
-
-    public function setOrders(Order $order) : void
-    {
-        $this->orders->add($order);
-    }
-
-    public function getOrders() : ArrayCollection
-    {
-        return $this->orders;
     }
 }

@@ -21,50 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d99e9360-9fff-4acf-9fac-a649f82cc039" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Content/GetContentUseCase/GetContentUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Content/GetContentUseCase/GetContentUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Content/UpdateContentUseCase/UpdateContentUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Content/UpdateContentUseCase/UpdateContentUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/AddOrUpdateDrinkUseCase/AddOrUpdateDrinkUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/AddOrUpdateDrinkUseCase/AddOrUpdateDrinkUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/DeleteDrinkUseCase/DeleteDrinkUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/DeleteDrinkUseCase/DeleteDrinkUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/GetDrinksUseCase/GetDrinksUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/GetDrinksUseCase/GetDrinksUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/AddOrUpdateOrdersUseCase/AddOrUpdateOrdersUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/AddOrUpdateOrdersUseCase/AddOrUpdateOrdersUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/AddOrUpdateSideDishesUseCase/AddOrUpdateSideDishesUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/AddOrUpdateSideDishesUseCase/AddOrUpdateSideDishesUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/DeleteOrdersUseCase/DeleteOrdersUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/DeleteOrdersUseCase/DeleteOrdersUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/DeleteSideDishesUseCase/DeleteSideDishesUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/DeleteSideDishesUseCase/DeleteSideDishesUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/GetOrdersUseCase/GetOrdersOutput.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/GetOrdersUseCase/GetOrdersOutput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/GetOrdersUseCase/GetOrdersUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/GetOrdersUseCase/GetOrdersUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/GetSideDishesUseCase/GetSideDishesUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/GetSideDishesUseCase/GetSideDishesUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/AddOrUpdatePizzaUseCase/AddOrUpdatePizzaUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/AddOrUpdatePizzaUseCase/AddOrUpdatePizzaUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/DeletePizzaUseCase/DeletePizzaUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/DeletePizzaUseCase/DeletePizzaUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase/GetPizzasUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase/GetPizzasUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase/GetPricesOutput.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase/GetPricesOutput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Salads/AddOrUpdateSaladUseCase/AddOrUpdateSaladUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Salads/AddOrUpdateSaladUseCase/AddOrUpdateSaladUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Salads/DeleteSaladUseCase/DeleteSaladUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Salads/DeleteSaladUseCase/DeleteSaladUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Salads/GetSaladsUseCase/GetSaladsUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Salads/GetSaladsUseCase/GetSaladsUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Users/AddOrUpdateUserUseCase/AddOrUpdateUserUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Users/AddOrUpdateUserUseCase/AddOrUpdateUserUseCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Users/DeleteUserUseCase/DeleteUserUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Users/DeleteUserUseCase/DeleteUserUseCase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Person.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Pizza.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Pizza.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Price.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Price.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/SideDish.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/SideDish.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/YummiServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/YummiServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/public/images/yummilogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/public/images/yummilogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/images/yummilogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/images/yummilogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.css" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/NavBar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/SelectTab/SelectTab.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/SelectTab/SelectTab.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Footer/Footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Footer/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Login/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/NavBar/NavBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/NavBar/NavBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Register/Register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Register/Register.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,21 +152,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
+      <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Entities" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Enum" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Buy" />
-      <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizza" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Entities" />
     </key>
   </component>
   <component name="RunManager">
@@ -233,7 +202,10 @@
       <workItem from="1597920014595" duration="4673000" />
       <workItem from="1597926403208" duration="11686000" />
       <workItem from="1597944310947" duration="30519000" />
-      <workItem from="1597995913599" duration="797000" />
+      <workItem from="1597995913599" duration="3242000" />
+      <workItem from="1598000373903" duration="168000" />
+      <workItem from="1598027358964" duration="935000" />
+      <workItem from="1598035116104" duration="414000" />
     </task>
     <servers />
   </component>
@@ -250,6 +222,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1863" y="331" width="442" height="236" key="#Composer" timestamp="1597838187429">
@@ -286,22 +259,22 @@
     </state>
     <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944090130" />
     <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597930148793" />
-    <state width="1324" height="153" key="GridCell.Tab.0.bottom" timestamp="1597975896087">
+    <state width="1324" height="153" key="GridCell.Tab.0.bottom" timestamp="1598000541310">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.bottom/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597975896087" />
-    <state width="1324" height="153" key="GridCell.Tab.0.center" timestamp="1597975896087">
+    <state width="1324" height="153" key="GridCell.Tab.0.bottom/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541310" />
+    <state width="1324" height="153" key="GridCell.Tab.0.center" timestamp="1598000541309">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.center/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597975896087" />
-    <state width="1324" height="153" key="GridCell.Tab.0.left" timestamp="1597975896087">
+    <state width="1324" height="153" key="GridCell.Tab.0.center/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541309" />
+    <state width="1324" height="153" key="GridCell.Tab.0.left" timestamp="1598000541309">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.left/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597975896087" />
-    <state width="1324" height="153" key="GridCell.Tab.0.right" timestamp="1597975896087">
+    <state width="1324" height="153" key="GridCell.Tab.0.left/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541309" />
+    <state width="1324" height="153" key="GridCell.Tab.0.right" timestamp="1598000541310">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.right/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597975896087" />
+    <state width="1324" height="153" key="GridCell.Tab.0.right/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541310" />
     <state x="227" y="72" width="986" height="571" key="NewPhpClassDialog" timestamp="1597974221122">
       <screen x="0" y="26" width="1366" height="720" />
     </state>

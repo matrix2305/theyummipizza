@@ -236,15 +236,6 @@ class Order implements IEntity
         return $this->updatedAt;
     }
 
-    public function getSideDishes() : ArrayCollection
-    {
-        return $this->sideDishes;
-    }
-
-    public function setSideDishes(SideDish $sideDish) : void
-    {
-        $this->sideDishes->add($sideDish);
-    }
 
     public function setPricePizzas(Price $price) : void
     {
@@ -261,5 +252,29 @@ class Order implements IEntity
         $this->drinks->clear();
         $this->pizzas->clear();
         $this->salads->clear();
+        $this->orderSideDishPizza->clear();
+    }
+
+    public function setSideDishes(SideDish $sideDish, Pizza $pizza) : void
+    {
+        $orderSideDishPizza = new OrderSideDishPizza();
+        $orderSideDishPizza->setSideDish($sideDish);
+        $orderSideDishPizza->setPizza($pizza);
+        $this->orderSideDishPizza->add($orderSideDishPizza);
+    }
+
+    public function getSideDish() : array
+    {
+        $sideDishes = [];
+        if (!empty($this->orderSideDishPizza->toArray())){
+            foreach ($this->orderSideDishPizza->toArray() as $sideDish){
+                foreach ($this->pizzas->toArray() as $pizza){
+                    if ($sideDish->getPizza()->getId() === $pizza->getPizza()->getId()){
+                        $sideDishes[] = ['sideDish' => $sideDish->getSideDish()->getName(), 'size' => $pizza->getSize()->getDescription(), 'pizza_name' => $pizza->getPizza()->getName()];
+                    }
+                }
+            }
+        }
+        return $sideDishes;
     }
 }
