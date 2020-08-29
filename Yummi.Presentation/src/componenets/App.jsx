@@ -1,14 +1,12 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import './App.css';
-import {Provider} from "react-redux";
-import store from '../store/store';
 import {BrowserRouter, Route} from "react-router-dom";
 import NavBar from "./NavBar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Musthead from "./Masthead/Masthead";
+import Masthead from "./Masthead/Masthead";
 import Footer from "./Footer/Footer";
 import Login from "./Login/Login";
+import Register from "./Register/Register";
 
 
 
@@ -17,7 +15,7 @@ function App() {
         <BrowserRouter>
             <Route path='/' exact>
                 <NavBar/>
-                <Musthead/>
+                <Masthead/>
                 <div className='container-fluid'>
                     <div className='row mt-5'>
                         <Footer/>
@@ -28,14 +26,12 @@ function App() {
                 <NavBar/>
                 <Login/>
             </Route>
+            <Route path='/register' exact>
+                <NavBar/>
+                <Register/>
+            </Route>
         </BrowserRouter>
     )
 }
 
-if (document.getElementById('app')){
-    ReactDOM.render(
-        <Provider store={store}>
-        <App/>
-        </Provider>
-        , document.getElementById('app') );
-}
+export default App;

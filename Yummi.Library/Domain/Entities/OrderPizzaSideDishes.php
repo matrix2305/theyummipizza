@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace Yummi\Domain\Entities;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Yummi\Domain\IAggregate;
 
@@ -9,9 +10,9 @@ use Yummi\Domain\IAggregate;
  * Class OrderSideDishPizza
  * @package Yummi\Domain\Entities
  * @ORM\Entity
- * @ORM\Table (name="order_side_dish_pizza")
+ * @ORM\Table (name="order_pizza_side_dishes")
  */
-class OrderSideDishPizza implements IAggregate
+class OrderPizzaSideDishes implements IAggregate
 {
     /**
      * @var string
@@ -23,22 +24,26 @@ class OrderSideDishPizza implements IAggregate
     private string $id;
 
     /**
-     * @var SideDish
-     * @ORM\ManyToOne (targetEntity="SideDish", inversedBy="OrderSideDishPizza", fetch="EAGER")
+     * @var
+     * @ORM\ManyToMany (targetEntity="SideDish", inversedBy="OrderPizzaSideDishes", fetch="EAGER")
      */
-    private SideDish $sideDish;
+    private $sideDishes;
 
     /**
-     * @var Pizza
-     * @ORM\ManyToOne (targetEntity="Pizza", inversedBy="OrderSideDishPizza", fetch="EAGER")
+     * @var Price
+     * @ORM\ManyToOne (targetEntity="Price", inversedBy="OrderPizzaSideDishes", fetch="EAGER")
      */
-    private Pizza $pizza;
+    private Price $price;
 
     /**
      * @var Order
-     * @ORM\ManyToOne (targetEntity="Order", inversedBy="OrderSideDishPizza", fetch="EXTRA_LAZY")
+     * @ORM\ManyToOne (targetEntity="Order", inversedBy="OrderPizzaSideDishes", fetch="LAZY")
      */
     private Order $order;
+
+    public function __construct() {
+        $this->sideDishes = new ArrayCollection();
+    }
 
     public function getId() : string
     {
@@ -47,12 +52,12 @@ class OrderSideDishPizza implements IAggregate
 
     public function setSideDish(SideDish $sideDish) : void
     {
-        $this->sideDish = $sideDish;
+        $this->sideDishes->add($sideDish);
     }
 
-    public function getSideDish() : SideDish
+    public function getSideDish() : ArrayCollection
     {
-        return $this->sideDish;
+        return $this->sideDishes;
     }
 
     public function setOrder(Order $order) : void
@@ -65,13 +70,13 @@ class OrderSideDishPizza implements IAggregate
         return $this->order;
     }
 
-    public function setPizza(Pizza $pizza) : void
+    public function setPrice(Price $price) : void
     {
-        $this->pizza = $pizza;
+        $this->price = $price;
     }
 
-    public function getPizza() : Pizza
+    public function getPizza() : Price
     {
-        return $this->pizza;
+        return $this->price;
     }
 }

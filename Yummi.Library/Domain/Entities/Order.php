@@ -77,39 +77,31 @@ class Order implements IEntity
      */
     private DateTime $updatedAt;
 
-
     /**
-     * @var ArrayCollection
-     * @ORM\ManyToMany(targetEntity="Price", mappedBy="Order", fetch="EAGER")
-     */
-    private ArrayCollection $pizzas;
-
-    /**
-     * @var ArrayCollection
+     * @var
      * @ORM\ManyToMany (targetEntity="Salad", mappedBy="Order", fetch="EAGER")
      */
-    private ArrayCollection $salads;
+    private $salads;
 
     /**
-     * @var ArrayCollection
+     * @var
      * @ORM\ManyToMany (targetEntity="Drink", mappedBy="Order", fetch="EAGER")
      */
-    private ArrayCollection $drinks;
+    private $drinks;
 
     /**
-     * @var ArrayCollection
-     * @ORM\OneToMany (targetEntity="OrderSideDishPizza", mappedBy="Order", fetch="EAGER")
+     * @var
+     * @ORM\OneToMany (targetEntity="OrderPizzaSideDishes", mappedBy="Order", fetch="EAGER")
      */
-    private ArrayCollection $orderSideDishPizza;
+    private $ordersPizzasSideDishes;
 
 
     public function __construct()
     {
         $this->price = null;
-        $this->pizzas = new ArrayCollection();
         $this->salads = new ArrayCollection();
         $this->drinks = new ArrayCollection();
-        $this->orderSideDishPizza = new ArrayCollection();
+        $this->ordersPizzasSideDishes = new ArrayCollection();
     }
 
     public function getId(): string
@@ -120,9 +112,9 @@ class Order implements IEntity
     public function setPrice(): void
     {
         $total = 0;
-        if (count($this->pizzas->toArray())>0){
-            foreach ($this->pizzas->toArray() as $pizza){
-                $total += $pizza->getPrice();
+        if (count($this->ordersPizzasSideDishes->toArray())>0){
+            foreach ($this->ordersPizzasSideDishes->toArray() as $pizza){
+                $total += $pizza->getPrice()->getPrice();
             }
         }
         if (count($this->salads->toArray()) > 0) {
@@ -237,44 +229,10 @@ class Order implements IEntity
     }
 
 
-    public function setPricePizzas(Price $price) : void
-    {
-        $this->pizzas->add($price);
-    }
-
-    public function getPricePizzas() : ArrayCollection
-    {
-        return $this->pizzas;
-    }
-
     public function clear() : void
     {
         $this->drinks->clear();
-        $this->pizzas->clear();
         $this->salads->clear();
-        $this->orderSideDishPizza->clear();
-    }
-
-    public function setSideDishes(SideDish $sideDish, Pizza $pizza) : void
-    {
-        $orderSideDishPizza = new OrderSideDishPizza();
-        $orderSideDishPizza->setSideDish($sideDish);
-        $orderSideDishPizza->setPizza($pizza);
-        $this->orderSideDishPizza->add($orderSideDishPizza);
-    }
-
-    public function getSideDish() : array
-    {
-        $sideDishes = [];
-        if (!empty($this->orderSideDishPizza->toArray())){
-            foreach ($this->orderSideDishPizza->toArray() as $sideDish){
-                foreach ($this->pizzas->toArray() as $pizza){
-                    if ($sideDish->getPizza()->getId() === $pizza->getPizza()->getId()){
-                        $sideDishes[] = ['sideDish' => $sideDish->getSideDish()->getName(), 'size' => $pizza->getSize()->getDescription(), 'pizza_name' => $pizza->getPizza()->getName()];
-                    }
-                }
-            }
-        }
-        return $sideDishes;
+        $this->ordersPizzasSideDishes->clear();
     }
 }

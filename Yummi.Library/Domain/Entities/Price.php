@@ -37,10 +37,10 @@ class Price implements IAggregate
     private int $price;
 
     /**
-     * @var ArrayCollection
-     * @ORM\ManyToMany (targetEntity="Order", inversedBy="Price", fetch="EXTRA_LAZY")
+     * @var
+     * @ORM\OneToMany (targetEntity="OrderPizzaSideDishes", mappedBy="Price", fetch="LAZY", cascade={"remove"})
      */
-    private ArrayCollection $orders;
+    private $ordersPizzasSideDishes;
 
     /**
      * @var Size
@@ -48,10 +48,9 @@ class Price implements IAggregate
      */
     private Size $size;
 
-
     public function __construct()
     {
-        $this->orders = new ArrayCollection();
+        $this->ordersPizzasSideDishes = new ArrayCollection();
     }
 
     public function getId() : string
@@ -87,5 +86,15 @@ class Price implements IAggregate
     public function getPizza() : Pizza
     {
         return $this->pizza;
+    }
+
+    public function setOrdersPizzaDishses(OrderPizzaSideDishes $orderPizzaSideDishes) : void
+    {
+        $this->ordersPizzasSideDishes->add($orderPizzaSideDishes);
+    }
+
+    public function getOrdersPizzasSideDishes() : ArrayCollection
+    {
+        return $this->ordersPizzasSideDishes;
     }
 }

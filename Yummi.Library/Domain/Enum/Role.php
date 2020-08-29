@@ -13,19 +13,18 @@ use Yummi\Domain\AEnum;
 class Role extends AEnum
 {
     /**
-     * @var $value
+     * @var int $value
      * @ORM\Column (name="role", type="integer",length=2)
      */
     protected int $value;
 
-    private const ADMINISTRATOR = 1;
-    private const MODERATOR = 2;
-    private const USER = 3;
+    private const ADMINISTRATOR = 0;
+    private const MODERATOR = 1;
+    private const USER = 2;
 
     private const DESCRIPTION = [
-        0 => null,
-        1 => 'Administrator',
-        2 => 'Moderator',
-        3 => 'User'
+        0 => 'Administrator',
+        1 => 'Moderator',
+        2 => 'User'
     ];
 }

@@ -4,7 +4,9 @@ namespace Yummi\Infrastructure;
 
 
 use Doctrine\DBAL\Types\Type;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+use Yummi\Application\Contracts\ILog;
 use Yummi\Application\Contracts\Repositories\IContentRepository;
 use Yummi\Application\Contracts\Repositories\IDrinksRepository;
 use Yummi\Application\Contracts\Repositories\IOrderRepository;
@@ -91,6 +93,7 @@ class YummiServiceProvider extends ServiceProvider
         $this->app->bind(IOrderRepository::class, OrderRepository::class);
         $this->app->bind(IPizzasRepository::class, PizzasRepository::class);
         $this->app->bind(ISaladsRepository::class, SaladsRepository::class);
+
     }
 
     public function boot() {

@@ -4,7 +4,8 @@ namespace Yummi\Infrastructure\DataAccess;
 
 
 use Doctrine\ORM\EntityManagerInterface;
-use Yummi\Application\Contracts\ILog;
+use Exception;
+use RuntimeException;
 use Yummi\Application\Contracts\Repositories\IUsersRepository;
 use Yummi\Domain\Entities\User;
 
@@ -12,9 +13,9 @@ class UsersRepository extends BaseRepository implements IUsersRepository
 {
     private string $user;
 
-    public function __construct(EntityManagerInterface $em, ILog $log)
+    public function __construct(EntityManagerInterface $em)
     {
-        parent::__construct($em, $log);
+        parent::__construct($em);
         $this->user = User::class;
     }
 
@@ -41,6 +42,11 @@ class UsersRepository extends BaseRepository implements IUsersRepository
     public function getUserByEmailOrUserName(string $input) : User
     {
         filter_var($input, FILTER_VALIDATE_EMAIL)? $field = 'email' : $field = 'username';
-        return $this->em->getRepository($this->user)->findOneBy([$field => $input]);
+        $user = $this->em->getRepository($this->user)->findOneBy([$field => $input]);
+        if (!$user){
+            throw new RuntimeException('User not found!');
+        }
+
+        return $user;
     }
 }

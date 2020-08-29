@@ -1,0 +1,13 @@
+.true-flash-msg{
+    width: 100%;
+    padding: 5px;
+    background-color: #80e974;
+    color: #1c1c1c;
+}
+
+.false-flash-msg{
+    width: 100%;
+    padding: 5px;
+    background-color: #ff6969;
+    color: #1c1c1c;
+}

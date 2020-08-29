@@ -6,6 +6,12 @@
         "framework",
         "laravel"
     ],
+    "authors": [
+        {
+            "name": "Srdjan Radosavljevic",
+            "email": "srki.rado@gmail.com"
+        }
+    ],
     "license": "MIT",
     "repositories": [
         {
@@ -23,6 +29,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "gedmo/doctrine-extensions": "^2.4",
         "guzzlehttp/guzzle": "^6.3",
+        "intervention/image": "^2.5",
         "laravel-doctrine/extensions": "^1.2",
         "laravel-doctrine/migrations": "^2.1",
         "laravel-doctrine/orm": "1.6.*",

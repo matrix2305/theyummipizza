@@ -6,7 +6,6 @@ use Doctrine\DBAL\ConnectionException;
 use Doctrine\DBAL\LockMode;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\OptimisticLockException;
-use Yummi\Application\Contracts\ILog;
 use RuntimeException;
 abstract class BaseRepository
 {
@@ -15,11 +14,8 @@ abstract class BaseRepository
      */
     protected EntityManagerInterface $em;
 
-    protected ILog $log;
-
-    public function __construct(EntityManagerInterface $em, ILog $log){
+    public function __construct(EntityManagerInterface $em){
         $this->em = $em;
-        $this->log = $log;
     }
 
     public function getAll(string $class) : array
@@ -29,34 +25,25 @@ abstract class BaseRepository
 
     public function getOne(string $class, string $id) : object
     {
-        return  $this->em->find($class, $id);
+        return $this->em->getRepository($class)->find($id);
     }
 
-    public function addOrUpdate($object, $version = null) : void
+    public function addOrUpdate(object $object, int $version) : void
     {
-        if (!empty($version)){
-            $this->em->getConnection()->beginTransaction();
+        $this->em->getConnection()->beginTransaction();
+        try {
             try {
                 $this->em->lock($object, LockMode::OPTIMISTIC, $version);
-                $this->em->persist($object);
-                $this->em->flush();
-                $this->em->getConnection()->commit();
-            }catch (OptimisticLockException $e) {
-                throw new RuntimeException('You have to refresh the page, some one made the changes before you.');
-            }catch (ConnectionException $exception){
-                $this->em->getConnection()->rollBack();
-                $this->log->addLog($exception->getMessage());
+            }catch (OptimisticLockException $exception){
+                throw new RuntimeException('Sorry, but someone else already execute changes. Please apply changes again!');
             }
-        }else{
-            $this->em->getConnection()->beginTransaction();
-            try {
-                $this->em->persist($object);
-                $this->em->flush();
-                $this->em->getConnection()->commit();
-            }catch (ConnectionException $exception){
-                $this->em->getConnection()->rollBack();
-                $this->log->addLog($exception->getMessage());
-            }
+            $this->em->getUnitOfWork()->clear();
+            $this->em->getUnitOfWork()->persist($object);
+            $this->em->flush();
+            $this->em->getConnection()->commit();
+        }catch (ConnectionException $exception){
+            $this->em->getConnection()->rollBack();
+            throw $exception;
         }
     }
 
@@ -69,7 +56,7 @@ abstract class BaseRepository
             $this->em->getConnection()->commit();
         }catch (ConnectionException $exception){
             $this->em->getConnection()->rollBack();
-            $this->log->addLog($exception->getMessage());
+            throw $exception;
         }
     }
 }

@@ -1,0 +1,9 @@
+.true-flash-msg{
+    width: 100%;
+    background-color: #80e974;
+}
+
+.false-flash-msg{
+    width: 100%;
+    background-color: #f56060;
+}

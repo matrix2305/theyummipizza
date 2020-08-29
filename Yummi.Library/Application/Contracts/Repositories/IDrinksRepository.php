@@ -11,7 +11,7 @@ interface IDrinksRepository
 
     public function getOneDrink(string $id): Drink;
 
-    public function addOrUpdateDrink(Drink $drink, $version = null) : void;
+    public function addOrUpdateDrink(Drink $drink, $version) : void;
 
     public function deleteDrink(Drink $drink): void;
 }

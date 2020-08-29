@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://kit.fontawesome.com/dd9d49e9ef.js" crossorigin="anonymous"></script>
-    <title>The Yummi Pizza</title>
+    <title>The Yummi Pizza | Panel</title>
 </head>
 <body>
 <div id="app"></div>

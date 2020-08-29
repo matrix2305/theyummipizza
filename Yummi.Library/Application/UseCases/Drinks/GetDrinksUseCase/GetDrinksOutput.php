@@ -11,8 +11,9 @@ class GetDrinksOutput extends BaseDataTransferObject
     public ?string $id;
     public string $name;
     public int $price;
-    public string $imagePath;
+    public ?string $imagePath;
     public ?string $updatedAt;
+    public ?int $rowVersion;
 
     public static function fromEntity(Drink $drink) : self
     {
@@ -22,7 +23,8 @@ class GetDrinksOutput extends BaseDataTransferObject
                 'name' => $drink->getName(),
                 'price' => $drink->getPrice(),
                 'imagePath' => $drink->getImagePath(),
-                'updatedAt' => $drink->getUpdatedAt()
+                'updatedAt' => $drink->getUpdatedAt(),
+                'rowVersion' => $drink->getRowVersion(),
             ]
         );
     }
@@ -47,10 +49,10 @@ class GetDrinksOutput extends BaseDataTransferObject
         return new self([
             'id' => $request->has('id')? $request->input('id') : null,
             'name' => $request->input('name'),
-            'price' => $request->input('price'),
-            'imagePath' => $request->input('imagePath'),
-            'updatedAt' => $request->has('updatedAt')? $request->input('updatedAt') : null
-
+            'price' => (int)$request->input('price'),
+            'imagePath' => null,
+            'updatedAt' => $request->has('updatedAt')? $request->input('updatedAt') : null,
+            'rowVersion' => $request->has('rowVersion')? $request->input('rowVersion'): null
         ]);
     }
 }

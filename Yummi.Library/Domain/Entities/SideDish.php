@@ -37,22 +37,14 @@ class SideDish implements IAggregate
      */
     private DateTime $updatedAt;
 
-
     /**
-     * @var ArrayCollection
-     * @ORM\ManyToMany (targetEntity="Price", inversedBy="SideDish", fetch="LAZY")
+     * @var
+     * @ORM\ManyToMany(targetEntity="OrderPizzaSideDishes", mappedBy="SideDish", fetch="LAZY")
      */
-    private ArrayCollection $pizzas;
-
-    /**
-     * @var ArrayCollection
-     * @ORM\OneToMany (targetEntity="OrderSideDishPizza", mappedBy="SideDish", fetch="EXTRA_LAZY")
-     */
-    private ArrayCollection $orderSideDishPizza;
+    private $orderPizzaSideDishses;
 
     public function __construct(){
-        $this->pizzas = new ArrayCollection();
-        $this->orderSideDishPizza = new ArrayCollection();
+        $this->orderPizzaSideDishses = new ArrayCollection();
     }
 
     public function getId() : string
@@ -81,20 +73,13 @@ class SideDish implements IAggregate
         return $this->updatedAt;
     }
 
-    /**
-     * @return ArrayCollection
-     */
-    public function getPizzas(): ArrayCollection
+    public function setOrder(OrderPizzaSideDishes $orderSideDishPizza) : void
     {
-        return $this->pizzas;
+        $this->orderPizzaSideDishses = $orderSideDishPizza;
     }
 
-    /**
-     * @param Price $price
-     */
-    public function setPizzaPrice(Price $price): void
+    public function getOrders() : ArrayCollection
     {
-        $this->pizzas->add($price);
+        return $this->orderPizzaSideDishses;
     }
-
 }

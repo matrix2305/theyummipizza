@@ -12,9 +12,9 @@ class ContentRepository extends BaseRepository implements IContentRepository
 {
     private string $content;
 
-    public function __construct(EntityManagerInterface $em, ILog $log)
+    public function __construct(EntityManagerInterface $em)
     {
-        parent::__construct($em, $log);
+        parent::__construct($em);
         $this->content = Content::class;
     }
 

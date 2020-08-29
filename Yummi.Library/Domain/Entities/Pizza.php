@@ -4,6 +4,7 @@ namespace Yummi\Domain\Entities;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Exception;
 use Yummi\Domain\IEntity;
 use Gedmo\Mapping\Annotation as Gedmo;
 use DateTime;
@@ -19,7 +20,7 @@ class Pizza implements IEntity
      * @var string
      * @ORM\Id
      * @ORM\Column(name="id", type="uuid", unique=true)
-     * @ORM\GeneratedValue (strategy="CUSTOM")
+     * @ORM\GeneratedValue(strategy="CUSTOM")
      * @ORM\CustomIdGenerator(class="Ramsey\Uuid\Doctrine\UuidGenerator")
      */
     private string $id;
@@ -44,33 +45,30 @@ class Pizza implements IEntity
 
     /**
      * @Gedmo\Timestampable(on="create")
-     * @ORM\Column(name = "created_at", type="datetime")
+     * @ORM\Column(name="created_at", type="datetime")
      */
     private DateTime $createdAt;
 
     /**
-     * @Gedmo\Timestampable (on="update")
-     * @ORM\Version
-     * @ORM\Column(name = "updated_at", type = "datetime")
+     * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(name="updated_at", type = "datetime")
      */
     private DateTime $updatedAt;
-
+    
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Price", mappedBy="Pizza", fetch="EAGER", cascade={"remove", "persist"})
+     */
+    private $prices;
 
     /**
-     * @var ArrayCollection
-     * @ORM\OneToMany  (targetEntity="Price", mappedBy="Pizza", fetch="EAGER", cascade={"remove", "persist"})
+     * @var int
+     *@ORM\Column(name="row_version", type="integer", length=8)
      */
-    private ArrayCollection $price;
-
-    /**
-     * @var ArrayCollection
-     * @ORM\OneToMany (targetEntity="OrderSideDishPizza", mappedBy="Pizza", fetch="EXTRA_LAZY")
-     */
-    private ArrayCollection $orderSideDishPizza;
+    private int $rowVersion;
 
     public function __construct(){
-        $this->price = new ArrayCollection();
-        $this->orderSideDishPizza = new ArrayCollection();
+        $this->prices = new ArrayCollection();
     }
 
     /**
@@ -115,12 +113,17 @@ class Pizza implements IEntity
 
     public function getPrice() : ArrayCollection
     {
-        return $this->price;
+        return $this->prices;
     }
 
     public function setPrice(Price $price) : void
     {
-        $this->price->add($price);
+        $this->prices->add($price);
+    }
+
+    public function clear() : void
+    {
+        $this->prices->clear();
     }
 
 
@@ -153,8 +156,14 @@ class Pizza implements IEntity
         return $this->updatedAt;
     }
 
-    public function clear() : void
+    public function setRowVersion(): void
     {
-        $this->price->clear();
+
+        $this->rowVersion = random_int(1000, 1000000);
+    }
+
+    public function getRowVersion() : int
+    {
+        return $this->rowVersion;
     }
 }

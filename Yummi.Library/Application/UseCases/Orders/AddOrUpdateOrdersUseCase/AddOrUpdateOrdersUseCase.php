@@ -2,7 +2,6 @@
 declare(strict_types=1);
 namespace Yummi\Application\UseCases\Orders\AddOrUpdateOrdersUseCase;
 
-
 use RuntimeException;
 use Yummi\Application\Contracts\Repositories\IDrinksRepository;
 use Yummi\Application\Contracts\Repositories\IOrderRepository;

@@ -13,13 +13,9 @@ interface IPizzasRepository
 
     public function getOnePizza(string $id) : Pizza;
 
-    public function addOrUpdatePizza(Pizza $pizza, $version = null): void;
+    public function addOrUpdatePizza(Pizza $pizza, int $version): void;
 
     public function deletePizza(Pizza $pizza) : void;
-
-    public function getAllSizes() : array;
-
-    public function getOneSize(string $id) : Size;
 
     public function getOnePrice(string $id) : Price;
 }

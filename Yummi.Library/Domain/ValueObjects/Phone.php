@@ -12,12 +12,12 @@ use RuntimeException;
 class Phone
 {
     /**
-     * @var int|null
-     * @ORM\Column (name="email", type="integer")
+     * @var string|null
+     * @ORM\Column (name="phone", type="string", length=14)
      */
-    private ?int $phone;
+    private ?string $phone;
 
-    public function __construct(int $phone)
+    public function __construct(string $phone)
     {
         $this->phone = $phone;
         if (!$this->validate()) {
@@ -27,10 +27,10 @@ class Phone
 
     public function validate() : bool
     {
-        return !(empty($this->phone) || strlen((string)$this->phone) > 14 || strlen((string)$this->phone) < 8);
+        return !(empty($this->phone) || strlen($this->phone) > 14 || strlen($this->phone) < 8);
     }
 
-    public function getPhone() : ?int
+    public function getPhone() : ?string
     {
         return $this->phone;
     }

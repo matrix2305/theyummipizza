@@ -10,8 +10,8 @@ use LaravelDoctrine\ORM\Notifications\Notifiable;
 use LaravelDoctrine\ORM\Auth\Authenticatable as DoctrineAuth;
 use Doctrine\ORM\Mapping as ORM;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use Yummi\Domain\Enum\Role;
 use Yummi\Domain\IEntity;
-use Yummi\Domain\ValueObjects\Email;
 use Gedmo\Mapping\Annotation as Gedmo;
 use DateTime;
 /**
@@ -46,14 +46,14 @@ class User implements Authenticatable, CanResetPasswordContract, JWTSubject, IEn
     private string $email;
 
     /**
-     * @var string|null
-     * @ORM\Column (name="avatar_path", type="string", length=20, nullable=true)
+     * @var Role
+     * @ORM\Embedded ("Yummi\Domain\Enum\Role")
      */
-    private ?string $avatarPath;
+    private Role $role;
 
     /**
      * @var Person
-     * @ORM\OneToOne(targetEntity="Person", mappedBy="User", fetch="EAGER")
+     * @ORM\OneToOne(targetEntity="Person", mappedBy="user", fetch="EAGER")
      */
     private Person $person;
 
@@ -97,57 +97,57 @@ class User implements Authenticatable, CanResetPasswordContract, JWTSubject, IEn
         return [];
     }
 
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->getId();
     }
 
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
 
-    public function getUsername() : string
+    public function getUsername(): string
     {
         return $this->username;
     }
 
-    public function setUsername(string $username) : void
+    public function setUsername(string $username): void
     {
         $this->username = $username;
     }
 
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    public function setEmail(string $email) : void
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function getAvatarPath() : ?string
+    public function getAvatarPath(): ?string
     {
         return $this->avatarPath;
     }
 
-    public function setAvatarPath(?string $avatarPath) : void
+    public function setAvatarPath(?string $avatarPath): void
     {
         $this->avatarPath = $avatarPath;
     }
 
-    public function getPerson() : Person
+    public function getPerson(): Person
     {
         return $this->person;
     }
 
-    public function setPerson(Person $person) : void
+    public function setPerson(Person $person): void
     {
         $this->person = $person;
     }
 
-    public function getUpdatedAt() : DateTime
+    public function getUpdatedAt(): DateTime
     {
         return $this->updatedAt;
     }
@@ -156,8 +156,18 @@ class User implements Authenticatable, CanResetPasswordContract, JWTSubject, IEn
      * Method for get created at time
      * @return DateTime
      */
-    public function getCreatedAt() : DateTime
+    public function getCreatedAt(): DateTime
     {
         return $this->createdAt;
+    }
+
+    public function setRole(Role $role): void
+    {
+        $this->role = $role;
+    }
+
+    public function getRole(): Role
+    {
+        return $this->role;
     }
 }

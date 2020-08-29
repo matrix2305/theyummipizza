@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
+use Yummi\Domain\Entities\Genius;
 
 class HomeController extends Controller
 {

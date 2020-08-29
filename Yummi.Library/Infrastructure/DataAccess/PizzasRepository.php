@@ -3,23 +3,21 @@ declare(strict_types=1);
 namespace Yummi\Infrastructure\DataAccess;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Yummi\Application\Contracts\ILog;
 use Yummi\Application\Contracts\Repositories\IPizzasRepository;
 use Yummi\Domain\Entities\Pizza;
 use Yummi\Domain\Entities\Price;
-use Yummi\Domain\Entities\Size;
 
 class PizzasRepository extends BaseRepository implements IPizzasRepository
 {
     private string $pizza;
-    private string $size;
     private string $price;
 
 
-    public function __construct(EntityManagerInterface $em, ILog $log)
+    public function __construct(EntityManagerInterface $em)
     {
-        parent::__construct($em, $log);
+        parent::__construct($em);
         $this->pizza = Pizza::class;
+        $this->price = Price::class;
     }
 
     public function getAllPizzas() : array
@@ -32,7 +30,7 @@ class PizzasRepository extends BaseRepository implements IPizzasRepository
         return $this->getOne($this->pizza, $id);
     }
 
-    public function addOrUpdatePizza(Pizza $pizza, $version = null): void
+    public function addOrUpdatePizza(Pizza $pizza, int $version): void
     {
         $this->addOrUpdate($pizza, $version);
     }
@@ -42,15 +40,6 @@ class PizzasRepository extends BaseRepository implements IPizzasRepository
         $this->remove($pizza);
     }
 
-    public function getAllSizes() : array
-    {
-        return $this->getAll($this->size);
-    }
-
-    public function getOneSize(string $id) : Size
-    {
-        return $this->getOne($this->size, $id);
-    }
 
     public function getOnePrice(string $id) : Price
     {

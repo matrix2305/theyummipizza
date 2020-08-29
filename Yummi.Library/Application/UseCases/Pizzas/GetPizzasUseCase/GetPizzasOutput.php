@@ -11,10 +11,11 @@ class GetPizzasOutput extends BaseDataTransferObject
     public ?string $id;
     public string $name;
     public string $description;
-    public string $imagePath;
+    public ?string $imagePath;
     public ?string $createdAt;
     public ?string $updatedAt;
-    public array $price;
+    public $price;
+    public ?int $rowVersion;
 
     public static function fromEntity(Pizza $pizza) : self
     {
@@ -22,10 +23,11 @@ class GetPizzasOutput extends BaseDataTransferObject
             'id' => $pizza->getId(),
             'name' => $pizza->getName(),
             'description' => $pizza->getDescription(),
-            'imagePath' => $pizza->getImagePath(),
+            'imagePath' => null,
             'createdAt' => $pizza->getCreatedAt()->format(self::$formatTime),
             'updatedAt' => $pizza->getUpdatedAt()->format(self::$formatTime),
-            'price' => GetPricesOutput::fromCollection($pizza->getPrice()->toArray())
+            'price' => GetPricesOutput::fromCollection($pizza->getPrice()->toArray()),
+            'rowVersion' => $pizza->getRowVersion()
         ]);
     }
 
@@ -50,10 +52,11 @@ class GetPizzasOutput extends BaseDataTransferObject
             'id' => $request->has('id')? $request->input('id'): null,
             'name' => $request->input('name'),
             'description' => $request->input('description'),
-            'imagePath' => $request->input('imagePath'),
+            'imagePath' => null,
             'createdAt' => null,
-            'updatedAt' => $request->has('updatedAt')?$request->input('updatedAt'):null,
-            'price' => $request->input('name')
+            'updatedAt' => $request->has('updatedAt') ? $request->input('updatedAt') : null,
+            'price' => $request->input('price'),
+            'rowVersion' => $request->has('rowVersion')? (int)$request->input('rowVersion'): null
         ]);
     }
 }

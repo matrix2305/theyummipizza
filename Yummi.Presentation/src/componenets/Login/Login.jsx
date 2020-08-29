@@ -20,12 +20,16 @@ function Login() {
             <div className='row'>
                 <div className='col-4 offset-4 text-center mt-5 p-5'>
                     <h1 className='text-uppercase'>Sign in</h1>
-                    <form onSubmit={event => Login(event)}>
+                    <form onSubmit={event => Login(event)} className='text-left'>
                         <label>Username or email: </label>
                         <input type='text' className='form-control' onChange={event => setLogin({...login, username: event.target.value})} value={login.username} required/>
                         <label>Password: </label>
                         <input type='password' className='form-control' onChange={event => setLogin({...login, password: event.target.value})} value={login.password} required/>
-                        <button className='btn btn-red mt-3'>Sign in</button>
+                        <div className='row'>
+                            <div className='col-12 text-center'>
+                                <button className='btn btn-red mt-3'>Sign in</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

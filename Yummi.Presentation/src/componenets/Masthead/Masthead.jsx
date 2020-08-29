@@ -9,7 +9,7 @@ function Masthead(){
         let render = 'Best pizza in your city!'.split('');
         let int = setInterval(() => {
             if (render.length>0){
-                setTitle({...title, text: title.text+=render.shift()})
+                setTitle({text: title.text+=render.shift()})
             }else {
                 clearInterval(int)
             }

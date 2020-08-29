@@ -12,9 +12,9 @@ class DrinksRepository extends BaseRepository implements IDrinksRepository
 {
     public string $drink;
 
-    public function __construct(EntityManagerInterface $em, ILog $log)
+    public function __construct(EntityManagerInterface $em)
     {
-        parent::__construct($em, $log);
+        parent::__construct($em);
         $this->drink = Drink::class;
     }
 
@@ -28,7 +28,7 @@ class DrinksRepository extends BaseRepository implements IDrinksRepository
         return $this->getOne($this->drink, $id);
     }
 
-    public function addOrUpdateDrink(Drink $drink, $version = null) : void
+    public function addOrUpdateDrink(Drink $drink, $version) : void
     {
         $this->addOrUpdate($drink, $version);
     }

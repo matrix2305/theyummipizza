@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Tymon\JWTAuth\Facades\JWTAuth;
 use Yummi\Application\Contracts\UseCases\IAddOrUpdateUserUseCase;
 use Yummi\Application\Contracts\UseCases\IGetUsersUseCase;
 use Yummi\Application\UseCases\Users\GetUsersUseCase\GetUsersOutput;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
@@ -23,32 +22,31 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        var_dump($request->all());
-//        try {
-//            $user = $this->GetUsersUseCase->Execute($request->input('username'));
-//            $field_type = filter_var($request->input('username'), FILTER_VALIDATE_EMAIL)? 'email' : 'username';
-//            $request->merge([$field_type => $request->input('username')]);
-//            $credentials = array_merge($request->only([$field_type, 'password']));
-//            $remember = $request->has('remember');
-//            if ($token = auth()->attempt($credentials, $remember)){
-//                return response()->json(['token' => $token, 'user' => $user, 'message' => 'Successfully sing in!', 'status' => true]);
-//            }
-//            return response()->json(['Unsuccessfully login, wrong password!', 'status' => false]);
-//        }catch (Exception $exception){
-//            return response()->json(['Unsuccessfully login, wrong username or email!', 'status' => false]);
-//        }
+        try {
+            $field_type = filter_var($request->input('username'), FILTER_VALIDATE_EMAIL)? 'email' : 'username';
+            $user = $this->GetUsersUseCase->Execute($request->input('username'));
+            $request->merge([$field_type => $request->input('username')]);
+            $credentials = array_merge($request->only([$field_type, 'password']));
+            $remember = $request->has('remember');
+            if ($token = JWTAuth::attempt($credentials, $remember)){
+                return response()->json(['token' => $token, 'user' => $user, 'message' => 'Successfully sing in!', 'status' => true]);
+            }
+            return response()->json(['message' => 'Unsuccessfully login, wrong password!', 'status' => false]);
+        }catch (Exception $exception){
+            return response()->json(['message' => 'Unsuccessfully login, wrong username or email!', 'status' => false]);
+        }
     }
 
-    public function me()
+    public function user()
     {
-        $authUser = Auth::user();
+        $authUser = auth()->user();
         $user = GetUsersOutput::fromEntity($authUser);
         return response()->json($user);
     }
 
     public function logout()
     {
-        Auth::logout();
+        auth()->logout();
         return response()->json(['message' => 'Successfully logout!', 'status' => true]);
     }
 
@@ -59,10 +57,12 @@ class AuthController extends Controller
 
     private function respondWithToken($token)
     {
+        $user = JWTAuth::user();
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth()->factory()->getTTL() * 60
+            'expires_in' => auth()->factory()->getTTL() * 60,
+            'user' => GetUsersOutput::fromEntity($user)
         ]);
     }
 

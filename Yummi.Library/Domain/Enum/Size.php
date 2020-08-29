@@ -18,14 +18,13 @@ class Size extends AEnum
      */
     protected int $value;
 
-    private const SIZE_1 = 1;
-    private const SIZE_2 = 2;
-    private const SIZE_3 = 3;
+    private const SIZE_1 = 0;
+    private const SIZE_2 = 1;
+    private const SIZE_3 = 2;
 
     private const DESCRIPTION = [
-        0 => null,
-        1 => '24cm',
-        2 => '32cm',
-        3 => '50cm'
+        0 => '24cm',
+        1 => '32cm',
+        2 => '50cm'
     ];
 }

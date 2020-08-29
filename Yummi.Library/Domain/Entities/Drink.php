@@ -58,10 +58,17 @@ class Drink implements IEntity
 
 
     /**
-     * @var ArrayCollection
+     * @var
      * @ORM\ManyToMany (targetEntity="Order", inversedBy="Drink", fetch="LAZY")
      */
-    private ArrayCollection $orders;
+    private $orders;
+
+    /**
+     * @var int
+     *@ORM\Version
+     *@ORM\Column(name="row_version", type="integer", length=8)
+     */
+    private int $rowVersion;
 
     public function __construct(){
         $this->orders = new ArrayCollection();
@@ -141,5 +148,16 @@ class Drink implements IEntity
     public function getUpdatedAt(): DateTime
     {
         return $this->updatedAt;
+    }
+
+    public function setRowVersion(): void
+    {
+
+        $this->rowVersion = random_int(1000, 1000000);
+    }
+
+    public function getRowVersion() : int
+    {
+        return $this->rowVersion;
     }
 }

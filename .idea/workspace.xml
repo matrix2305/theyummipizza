@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,19 +23,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d99e9360-9fff-4acf-9fac-a649f82cc039" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/Services/RoleService/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/AddOrCreatePizzaUseCase/AddOrUpdatePizzaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/AddOrUpdateDrinkUseCase/AddOrUpdateDrinkController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/GetPizzasUseCase/GetPizzasController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/AddPizza/AddPizza.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Header/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Login/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/services/FlashMessage/FlashMessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/services/FlashMessage/FlashMessage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/services/LayoutHOC/LayoutHOC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/drinksSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/ordersSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/userSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/usersSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/images/MustheadCaruousel/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/images/MustheadCaruousel/musthead.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/images/musthead.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/images/yummilogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/services/FlashMessage/FlashMessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/services/FlashMessage/FlashMessage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/slices/drinksSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/slices/ordersSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/slices/pizzasSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/slices/saladsSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/slices/userSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yummi.Presentation/src/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/Contracts/Repositories/IDrinksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/Contracts/Repositories/IDrinksRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/Contracts/Repositories/IPizzasRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/Contracts/Repositories/IPizzasRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/AddOrUpdateDrinkUseCase/AddOrUpdateDrinkUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/AddOrUpdateDrinkUseCase/AddOrUpdateDrinkUseCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/GetDrinksUseCase/GetDrinksOutput.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Drinks/GetDrinksUseCase/GetDrinksOutput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/AddOrUpdateOrdersUseCase/AddOrUpdateOrdersUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders/AddOrUpdateOrdersUseCase/AddOrUpdateOrdersUseCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/AddOrUpdatePizzaUseCase/AddOrUpdatePizzaUseCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/AddOrUpdatePizzaUseCase/AddOrUpdatePizzaUseCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase/GetPizzasOutput.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase/GetPizzasOutput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Users/GetUsersUseCase/GetUsersOutput.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Users/GetUsersUseCase/GetUsersOutput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Drink.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Drink.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/OrderSideDishPizza.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/OrderPizzaSideDishes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Pizza.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Pizza.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Price.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/Price.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/SideDish.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/SideDish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Entities/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Enum/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Enum/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/Enum/Size.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/Enum/Size.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Domain/ValueObjects/Phone.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Domain/ValueObjects/Phone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/BaseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/BaseRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/ContentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/ContentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/DrinksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/DrinksRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/PizzasRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/PizzasRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/DataAccess/UsersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/Services/ImageUploader/ImageUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/Services/ImageUploader/ImageUpload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Library/Infrastructure/YummiServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Library/Infrastructure/YummiServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Footer/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Login/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Masthead/Masthead.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/NavBar/NavBar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/NavBar/NavBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Register/Register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/Register/Register.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/contentSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/contentSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/dinksSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/pizzasSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/pizzasSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/saladsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/saladsSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/slices/shoppingCartSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/components/AddDrink/AddDrink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/js/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.MvcApp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.MvcApp/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Masthead/Masthead.css" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Masthead/Masthead.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Masthead/Masthead.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Masthead/Masthead.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/NavBar/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/componenets/Register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yummi.Presentation/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Yummi.Presentation/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +125,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/Yummi.Libary/vendor/symfony/routing" />
@@ -152,22 +229,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
-      <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Entities" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Orders" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Pizzas/GetPizzasUseCase" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Enum" />
       <recent name="$PROJECT_DIR$/Yummi.Library/Application/UseCases/Buy" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Yummi.Presentation/src" />
+      <recent name="$PROJECT_DIR$/Yummi.Presentation/src/componenets" />
+      <recent name="$PROJECT_DIR$/Yummi.Library/Domain/Entities" />
     </key>
   </component>
   <component name="RunManager">
@@ -205,7 +284,17 @@
       <workItem from="1597995913599" duration="3242000" />
       <workItem from="1598000373903" duration="168000" />
       <workItem from="1598027358964" duration="935000" />
-      <workItem from="1598035116104" duration="414000" />
+      <workItem from="1598035116104" duration="6611000" />
+      <workItem from="1598091822160" duration="34000" />
+      <workItem from="1598137375244" duration="3930000" />
+      <workItem from="1598175203998" duration="8740000" />
+      <workItem from="1598436781303" duration="7144000" />
+      <workItem from="1598472113491" duration="357000" />
+      <workItem from="1598532825961" duration="18861000" />
+      <workItem from="1598563932488" duration="16258000" />
+      <workItem from="1598608579388" duration="4437000" />
+      <workItem from="1598625364261" duration="588000" />
+      <workItem from="1598633813548" duration="35078000" />
     </task>
     <servers />
   </component>
@@ -229,23 +318,25 @@
       <screen x="1366" y="0" width="1440" height="900" />
     </state>
     <state x="1863" y="331" width="442" height="236" key="#Composer/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597838187429" />
-    <state x="43" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597944130998">
-      <screen x="0" y="26" width="1366" height="720" />
-    </state>
-    <state x="43" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944130998" />
-    <state x="1923" y="235" width="317" height="427" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597926527829">
+    <state x="1411" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598532879884">
       <screen x="1366" y="0" width="1440" height="900" />
     </state>
-    <state x="1923" y="235" width="317" height="427" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597926527829" />
+    <state x="43" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944130998" />
+    <state x="1411" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598532879884" />
+    <state x="1923" y="235" width="317" height="427" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598570565306">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1923" y="235" width="317" height="427" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598570565306" />
     <state x="1819" y="201" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597932130677">
       <screen x="1366" y="0" width="1440" height="900" />
     </state>
     <state x="1819" y="201" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597932130677" />
-    <state x="430" y="193" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597996052157">
+    <state x="430" y="193" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598702677717">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state x="430" y="193" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597996052157" />
+    <state x="430" y="193" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598137832636" />
     <state x="1819" y="209" width="530" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597884339644" />
+    <state x="430" y="193" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.720@0.26.1366.720" timestamp="1598702677717" />
     <state x="437" y="232" width="488" height="307" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1597942587383">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
@@ -254,45 +345,63 @@
       <screen x="1366" y="0" width="1440" height="900" />
     </state>
     <state x="1833" y="364" width="502" height="170" key="ComposerInitDialogKey/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597836672615" />
-    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl" timestamp="1597944090130">
+    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl" timestamp="1598472455392">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944090130" />
-    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597930148793" />
-    <state width="1324" height="153" key="GridCell.Tab.0.bottom" timestamp="1598000541310">
+    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598186434883" />
+    <state x="442" y="145" width="430" height="481" key="FileChooserDialogImpl/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598472455392" />
+    <state width="1324" height="151" key="GridCell.Tab.0.bottom" timestamp="1598651774907">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.bottom/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541310" />
-    <state width="1324" height="153" key="GridCell.Tab.0.center" timestamp="1598000541309">
+    <state width="1324" height="152" key="GridCell.Tab.0.bottom/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598195217162" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598581209943" />
+    <state width="1324" height="151" key="GridCell.Tab.0.bottom/0.26.1366.720@0.26.1366.720" timestamp="1598651774907" />
+    <state width="1324" height="151" key="GridCell.Tab.0.center" timestamp="1598651774906">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.center/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541309" />
-    <state width="1324" height="153" key="GridCell.Tab.0.left" timestamp="1598000541309">
+    <state width="1324" height="152" key="GridCell.Tab.0.center/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598195217161" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598581209942" />
+    <state width="1324" height="151" key="GridCell.Tab.0.center/0.26.1366.720@0.26.1366.720" timestamp="1598651774906" />
+    <state width="1324" height="151" key="GridCell.Tab.0.left" timestamp="1598651774906">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.left/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541309" />
-    <state width="1324" height="153" key="GridCell.Tab.0.right" timestamp="1598000541310">
+    <state width="1324" height="152" key="GridCell.Tab.0.left/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598195217161" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598581209942" />
+    <state width="1324" height="151" key="GridCell.Tab.0.left/0.26.1366.720@0.26.1366.720" timestamp="1598651774906" />
+    <state width="1324" height="151" key="GridCell.Tab.0.right" timestamp="1598651774907">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
-    <state width="1324" height="153" key="GridCell.Tab.0.right/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598000541310" />
-    <state x="227" y="72" width="986" height="571" key="NewPhpClassDialog" timestamp="1597974221122">
+    <state width="1324" height="152" key="GridCell.Tab.0.right/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1598195217161" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598581209943" />
+    <state width="1324" height="151" key="GridCell.Tab.0.right/0.26.1366.720@0.26.1366.720" timestamp="1598651774907" />
+    <state x="252" y="231" width="936" height="515" key="NewPhpClassDialog" timestamp="1598702646015">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
     <state x="227" y="72" width="986" height="515" key="NewPhpClassDialog/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597974221122" />
-    <state x="1741" y="164" width="986" height="571" key="NewPhpClassDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597934381016" />
+    <state x="1741" y="164" width="986" height="571" key="NewPhpClassDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598572621599" />
+    <state x="252" y="231" width="936" height="515" key="NewPhpClassDialog/0.26.1366.720@0.26.1366.720" timestamp="1598702646015" />
     <state x="1463" y="99" width="1246" height="704" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1597875115583">
       <screen x="1366" y="0" width="1440" height="900" />
     </state>
     <state x="1463" y="99" width="1246" height="704" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597875115583" />
+    <state x="1463" y="99" width="1246" height="704" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598577244030">
+      <screen x="1366" y="0" width="1440" height="900" />
+    </state>
+    <state x="1463" y="99" width="1246" height="704" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598577244030" />
     <state x="187" y="89" width="1022" height="550" maximized="true" key="dock-window-1" timestamp="1597944113021">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
     <state x="187" y="89" width="1022" height="550" maximized="true" key="dock-window-1/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597944113021" />
     <state x="114" y="26" width="1147" height="717" maximized="true" key="dock-window-1/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597934560371" />
-    <state x="363" y="181" width="672" height="543" key="search.everywhere.popup" timestamp="1597965273922">
+    <state x="462" y="162" width="438" height="446" key="refactoring.ChangeSignatureDialog" timestamp="1598638409744">
+      <screen x="0" y="26" width="1366" height="720" />
+    </state>
+    <state x="462" y="162" width="438" height="446" key="refactoring.ChangeSignatureDialog/0.26.1366.720@0.26.1366.720" timestamp="1598638409744" />
+    <state x="363" y="181" width="672" height="543" key="search.everywhere.popup" timestamp="1598642246789">
       <screen x="0" y="26" width="1366" height="720" />
     </state>
     <state x="363" y="181" width="672" height="543" key="search.everywhere.popup/0.26.1366.720/1366.0.1440.900@0.26.1366.720" timestamp="1597965273922" />
-    <state x="1749" y="194" width="672" height="678" key="search.everywhere.popup/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1597922211498" />
+    <state x="1749" y="194" width="672" height="678" key="search.everywhere.popup/0.26.1366.720/1366.0.1440.900@1366.0.1440.900" timestamp="1598440028429" />
+    <state x="363" y="181" width="672" height="543" key="search.everywhere.popup/0.26.1366.720@0.26.1366.720" timestamp="1598642246789" />
   </component>
 </project>

@@ -50,7 +50,7 @@ class Person implements IAggregate
 
     /**
      * @var User
-     * @ORM\OneToOne (targetEntity="User", inversedBy="Person", fetch="LAZY", cascade={"remove"})
+     * @ORM\OneToOne (targetEntity="User", inversedBy="person", fetch="LAZY", cascade={"remove"})
      */
     private User $user;
 
